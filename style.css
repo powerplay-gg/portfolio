@@ -1,0 +1,183 @@
+html,
+body {
+  margin: 0;
+}
+
+@keyframes fade-in {
+  to {
+    opacity: 100%;
+    transform: translateY(0);
+  }
+}
+
+a {
+  text-decoration: none;
+}
+p {
+  margin: 0;
+}
+
+header {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 22px 50px;
+  width: 100%;
+  align-items: center;
+  border-bottom: 1px solid #151515;
+  position: sticky;
+  top: 0;
+  background-color: #fdfdfd;
+  animation: fade-in 0.4s ease-out 0.2s forwards;
+  z-index: 1;
+}
+
+.headerpart {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 32px;
+}
+
+.main {
+  width: 1194px;
+  margin: 0 auto;
+  animation: fade-in 0.5s ease-out 0.5s forwards;
+}
+
+.titlesvg {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+  width: auto;
+  margin-top: 200px;
+  margin-bottom: 270px;
+}
+
+.titlesvgtext {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 30px;
+}
+
+.card {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 40px;
+  gap: 81px;
+  width: 100%;
+  height: 380px;
+  background: #fdfdfd;
+  border: 1px solid #151515;
+  box-shadow: 6px 6px 0px #151515;
+  border-radius: 4px;
+}
+
+.cardText {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  width: 100%;
+}
+
+.cardTexthead {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  width: 100%;
+}
+
+.cardmain {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+  width: 100%;
+  margin-bottom: 180px;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 30px;
+  width: 100%;
+}
+
+.tags {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 10px;
+}
+
+.tag {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 8px 16px;
+  gap: 10px;
+  border: 1px solid #9b9b9f;
+  border-radius: 4px;
+}
+
+.cardBottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+  width: 100%;
+}
+
+.footerSocial {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 12px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  width: 1194px;
+  margin: auto;
+  margin-bottom: 100px;
+  padding-top: 80px;
+}
+
+.footerstroke {
+  width: 100%;
+  border-top: 1px solid #151515;
+}
+
+.button {
+  padding: 16px 40px;
+  background: #fdfdfd;
+  border: 2px solid #151515;
+  border-radius: 28px;
+}
+
+.buttonmain {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  width: 100%;
+  margin-top: 30px;
+}

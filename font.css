@@ -1,0 +1,97 @@
+.regular24 {
+  font-family: "Darker Grotesque";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 33px;
+  letter-spacing: 0.01em;
+  color: #151515;
+}
+
+.h1promo {
+  font-family: "Darker Grotesque";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 100px;
+  line-height: 73px;
+  letter-spacing: 0.01em;
+  color: #151515;
+}
+
+.pregular {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 29px;
+  letter-spacing: 0.01em;
+  color: #151515;
+}
+
+.h1 {
+  font-family: "Darker Grotesque";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 65px;
+  letter-spacing: 0.01em;
+}
+
+.h2 {
+  font-family: "Darker Grotesque";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 54px;
+  letter-spacing: 0.01em;
+}
+
+.h3 {
+  font-family: "Darker Grotesque";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 43px;
+  letter-spacing: 0.01em;
+}
+
+.pBold {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: 0.01em;
+}
+
+.pSmall {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: 0.01em;
+  color: #646464;
+}
+
+.footerfont {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 29px;
+  letter-spacing: 0.01em;
+  text-decoration-line: underline;
+}
+
+.buttonfont {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.02em;
+  color: #151515;
+}
+
+
