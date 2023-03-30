@@ -46,6 +46,20 @@
   color: #151515;
 }
 
+.pregularLink {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 29px;
+  letter-spacing: 0.01em;
+  color: #151515;
+}
+
+.pregularLink:hover {
+  color: #3b68dd;
+}
+
 .h1 {
   font-family: "Darker Grotesque";
   font-style: normal;
@@ -164,6 +178,11 @@
   }
   
   .pregular {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .pregularLink {
     font-size: 16px;
     line-height: 26px;
   }
