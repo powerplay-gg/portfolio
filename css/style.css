@@ -1,0 +1,871 @@
+html,
+body {
+  margin: 0;
+}
+
+@keyframes fade-in {
+  to {
+    opacity: 100%;
+    transform: translateY(0);
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+.open {
+  display: flex !important;
+}
+
+ul {
+  text-decoration: none;
+  padding-left: 16px;
+  margin: 0;
+  gap: 6px;
+  display: grid;
+}
+
+li {
+  text-decoration: none;
+}
+
+.indexill {
+  width: 408px;
+  height: 295px;
+}
+
+.workill {
+  width: 480px;
+  height: 354px;
+}
+
+p {
+  margin: 0;
+}
+
+.header {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 22px 50px;
+  width: 100%;
+  align-items: center;
+  border-bottom: 1px solid #151515;
+  position: sticky;
+  top: 0;
+  background-color: #fdfdfd;
+  animation: fade-in 0.4s ease-out 0.2s forwards;
+  z-index: 1;
+}
+
+.burger {
+  display: none;
+  position: relative;
+  z-index: 50;
+  align-items: center;
+  justify-content: flex-end;
+  width: 30px;
+  height: 18px;
+}
+
+.burger span {
+  height: 2px;
+  width: 80%;
+  transform: scale(1);
+  background-color: #151515;
+}
+
+.burger::before,
+.burger::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background-color: #151515;
+  transition: all 0.3s ease 0s;
+}
+
+.burger::before {
+  top: 0;
+}
+
+.burger::after {
+  bottom: 0;
+}
+
+.burger.active span {
+  transform: scale(0);
+}
+
+.burger.active::before {
+  top: 50%;
+  transform: rotate(-45deg) translate(0, -50%);
+}
+
+.burger.active::after {
+  bottom: 50%;
+  transform: rotate(45deg) translate(0, 50%);
+}
+
+.headerpart {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 32px;
+}
+
+@keyframes burgerAnimationin {
+  from {opacity: 0}
+  to {opacity: 1}
+}
+
+@keyframes burgerAnimationout {
+  from {opacity: 1}
+  to {opacity: 0}
+}
+
+.main {
+  width: 1194px;
+  margin: 0 auto;
+  animation: fade-in 0.5s ease-out 0.5s forwards;
+}
+
+.maincase {
+  width: 990px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 60px;
+  margin-right: 102px;
+}
+
+.case16 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  width: 100%;
+}
+
+.titlesvg {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+  width: auto;
+  margin-top: 200px;
+  margin-bottom: 270px;
+}
+
+.titlesvglowmargin {
+  margin-top: 120px;
+  margin-bottom: 200px;
+}
+
+.titlesvgtext {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.titlesvgtexttoppadding {
+  padding-top: 80px;
+}
+
+.card {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 40px;
+  gap: 81px;
+  width: 100%;
+  height: 380px;
+  background: #fdfdfd;
+  border: 1px solid #151515;
+  box-shadow: 6px 6px 0px #151515;
+  border-radius: 4px;
+  transition: 0.4s;
+}
+
+.card:hover {
+  box-shadow: 10px 10px 0px #151515;
+}
+
+.card4:hover {
+  background: rgba(255, 245, 0, 0.05);
+}
+
+.card3:hover {
+  background: rgba(5, 0, 255, 0.05);
+}
+
+.card2:hover {
+  background: rgba(235, 0, 255, 0.05);
+}
+
+.card1:hover {
+  background: rgba(0, 255, 194, 0.05);
+}
+
+.card1 {
+  width: 582px;
+}
+
+.cardText {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  width: 100%;
+}
+
+.cardTexthead {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  width: 100%;
+}
+
+.cardmain {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+  width: 100%;
+  margin-bottom: 180px;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 30px;
+  width: 100%;
+}
+
+.tags {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 10px;
+}
+
+.tag {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 8px 16px;
+  gap: 10px;
+  border: 1px solid #9b9b9f;
+  border-radius: 4px;
+}
+
+.cardBottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+  width: 100%;
+}
+
+.footerSocial {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 12px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  width: 1194px;
+  margin: auto;
+  margin-bottom: 100px;
+  padding-top: 80px;
+}
+
+.footerstroke {
+  width: 100%;
+  border-top: 1px solid #151515;
+  animation: fade-in 0.5s ease-out 0.5s forwards;
+}
+
+.button {
+  padding: 16px 40px;
+  background: #fdfdfd;
+  border: 2px solid #151515;
+  border-radius: 40px;
+  transition: 0.3s;
+}
+
+.button:hover {
+  background: #151515;
+  text-decoration-color: #fdfdfd;
+}
+
+.buttonmain {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.casewithbutton {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: flex-start;
+  gap: 60px;
+  margin-top: 100px;
+  margin-bottom: 200px;
+  position: relative;
+  width: 100%;
+}
+
+.backbutton {
+  display: flex;
+  margin-top: 17px;
+  position: sticky;
+  top: 210px;
+}
+
+.link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 8px;
+}
+
+.cv {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  width: 100%;
+  margin-top: 100px;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #151515;
+  margin-bottom: 50px;
+}
+
+.cvHeaderwithbut {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.cvHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.cvMain2line {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 32px;
+}
+
+.cvMain1line {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+  width: 372px;
+}
+
+.cvMainExp {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+  width: 776px;
+  margin-bottom: 200px;
+}
+
+.cvPart {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  width: 100%;
+}
+
+.cvPartExp {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.cvPartExpCompany {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 18px;
+}
+
+.cvCompanyHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+}
+
+.lang2stroke {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 20px;
+  width: 100%;
+}
+
+.lang1stroke {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  width: 100%;
+}
+
+.textgap8 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  width: 100%;
+}
+
+.img {
+  border: 1px solid #151515;
+  border-radius: 8px;
+}
+
+.doubleimg {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+@media only screen and (max-width: 767px) {
+  html,
+  body {
+    margin: 0;
+  }
+
+  ul {
+    text-decoration: none;
+    padding-left: 16px;
+    margin: 0;
+    gap: 6px;
+    display: grid;
+  }
+
+  li {
+    text-decoration: none;
+  }
+
+  .indexill {
+    width: 294px;
+    height: 213px;
+  }
+
+  .workill {
+    width: 339px;
+    height: 250px;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  .header {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 24px 24px;
+    width: 100%;
+    align-items: center;
+    border-bottom: 1px solid #151515;
+    position: sticky;
+    top: 0;
+    background-color: #fdfdfd;
+    animation: fade-in 0.4s ease-out 0.2s forwards;
+    z-index: 1;
+  }
+
+  .burger {
+    display: flex;
+  }
+
+  .headerpart {
+    top: 98px;
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    right: 0;
+    height: auto;
+    text-align: center;
+    background-color: #fdfdfd;
+    align-items: center;
+    padding: 40px 0 40px 0;
+    gap: 32px;
+    border-bottom: 1px solid #151515;
+    animation: burgerAnimationin 0.4s;
+  }
+
+  .main {
+    max-width: 767px;
+    width: auto;
+    margin: auto;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .maincase {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+    margin-right: 0;
+  }
+
+  .case16 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    width: 100%;
+  }
+
+  .titlesvg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    text-align: center;
+  }
+
+  .titlesvglowmargin {
+    margin-top: 43px;
+    margin-bottom: 80px;
+    flex-direction: column-reverse;
+  }
+
+  .titlesvgtext {
+    gap: 24px;
+    text-align: center;
+  }
+
+  .titlesvgtexttoppadding {
+    padding-top: 0;
+    text-align: center;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 24px;
+    width: 100%;
+    height: 360px;
+    gap: initial;
+    background: #fdfdfd;
+    border: 1px solid #151515;
+    box-shadow: 6px 6px 0px #151515;
+    border-radius: 4px;
+    transition: 0.4s;
+  }
+
+  .card:hover {
+    box-shadow: 10px 10px 0px #151515;
+  }
+
+  .card4:hover {
+    background: rgba(255, 245, 0, 0.05);
+  }
+
+  .card3:hover {
+    background: rgba(5, 0, 255, 0.05);
+  }
+
+  .card2:hover {
+    background: rgba(235, 0, 255, 0.05);
+  }
+
+  .card1:hover {
+    background: rgba(0, 255, 194, 0.05);
+  }
+  .card1 {
+    width: 100%;
+  }
+
+  .cardText {
+    gap: 16px;
+  }
+
+  .cardTexthead {
+    gap: 8px;
+  }
+
+  .cardmain {
+    gap: 24px;
+    margin-bottom: 110px;
+  }
+
+  .cards {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .tags {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 10px;
+  }
+
+  .tag {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 8px 16px;
+    gap: 10px;
+    border: 1px solid #9b9b9f;
+    border-radius: 4px;
+  }
+
+  .cardBottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 16px;
+  }
+
+  .footerSocial {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 12px;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    width: auto;
+    margin: auto;
+    margin-bottom: 80px;
+    padding-top: 60px;
+    padding-left: 24px;
+    padding-right: 0;
+  }
+
+  .footerstroke {
+    width: 100%;
+    border-top: 1px solid #151515;
+    animation: fade-in 0.5s ease-out 0.5s forwards;
+  }
+
+  .button {
+    padding: 16px 40px;
+    background: #fdfdfd;
+    border: 2px solid #151515;
+    border-radius: 40px;
+    transition: 0.3s;
+  }
+
+  .button:hover {
+    background: #151515;
+    text-decoration-color: #fdfdfd;
+  }
+
+  .buttonmain {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .casewithbutton {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+    gap: 40px;
+    margin-top: 60px;
+    margin-bottom: 110px;
+    position: relative;
+    width: 100%;
+  }
+
+  .backbutton {
+    display: flex;
+    margin-top: 0px;
+    position: sticky;
+    top: 150px;
+  }
+
+  .link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+  }
+
+  .cv {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    width: 100%;
+    margin-top: 60px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #151515;
+    margin-bottom: 50px;
+  }
+
+  .cvHeaderwithbut {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    width: 100%;
+    gap: 24px;
+  }
+
+  .cvHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .cvMain2line {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 0;
+  }
+
+  .cvMain1line {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 50px;
+    width: 100%;
+  }
+
+  .cvMainExp {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    width: 100%;
+    margin-bottom: 110px;
+  }
+
+  .cvPart {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    width: 100%;
+  }
+
+  .cvPartExp {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+  }
+
+  .cvPartExpCompany {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+  }
+
+  .cvCompanyHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+
+  .lang2stroke {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 20px;
+    width: 100%;
+  }
+
+  .lang1stroke {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    width: 100%;
+  }
+
+  .textgap8 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    width: 100%;
+  }
+
+  .img {
+    border: 1px solid #151515;
+    border-radius: 6px;
+    width: 100%;
+  }
+
+  .doubleimg {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    width: 100%;
+  }
+}

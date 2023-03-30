@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Works</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.svg" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/font.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@600;700&family=Poppins:ital,wght@0,400;0,600;1,500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="header" style="opacity: 0; transform: translateY(10px)">
+      <a href="index.html"><img src="img/logo.svg" alt="logo" /></a>
+      <div class="headerpart">
+        <a class="regular24" href="work.html">Work</a>
+        <a class="regular24" href="about.html">About</a>
+        <div class="regular24disabled">RU</div>
+      </div>
+      <div class="burger">
+        <span></span>
+      </div>
+    </div>
+    <div class="main" style="opacity: 0; transform: translateY(0px)">
+      <div class="titlesvg titlesvglowmargin">
+        <div class="titlesvgtext titlesvgtexttoppadding">
+          <p class="h1promo">My works</p>
+          <p class="pregular">
+            The presentation by Sergey Surganov, designer of Notion, titled
+            "Honesty, Joyfulness, Curiosity" encapsulates my professional and
+            personal approach. These three core values are fundamental to my
+            work ethic and guide my decision-making process.
+          </p>
+        </div>
+        <object
+          type="image/svg+xml"
+          data="img/worksanimated.svg"
+          class="workill"
+        ></object>
+      </div>
+      <div class="cardmain">
+        <div class="cards">
+          <a href="design_system.html" class="card card3">
+            <div class="cardText">
+              <div class="cardTexthead">
+                <p class="h2">Design system YouDo Business</p>
+                <p class="pSmall">YouDo Business, 2022</p>
+              </div>
+              <p class="pregular">
+                A full-fledged creation of a product design system
+              </p>
+            </div>
+            <div class="cardBottom">
+              <img src="img/youdologo.svg" alt="youdologo" />
+              <div class="tags">
+                <div class="tag">
+                  <p class="pSmall">Design system</p>
+                </div>
+                <div class="tag">
+                  <p class="pSmall">Figma</p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="processes.html" class="card card2">
+            <div class="cardText">
+              <div class="cardTexthead">
+                <p class="h2">New processes of design team</p>
+                <p class="pSmall">Loginet, 2021</p>
+              </div>
+              <p class="pregular">
+                As a manager, I had to improve old and implement new processes
+                in the design department
+              </p>
+            </div>
+            <div class="cardBottom">
+              <img src="img/loginetlogo.svg" alt="loginetlogo" />
+              <div class="tags">
+                <div class="tag">
+                  <p class="pSmall">Managment</p>
+                </div>
+                <div class="tag">
+                  <p class="pSmall">Process</p>
+                </div>
+                <div class="tag">
+                  <p class="pSmall">OKR</p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="cards">
+          <a href="cargo.html" class="card card1">
+            <div class="cardText">
+              <div class="cardTexthead">
+                <p class="h2">Service ”Cargo”</p>
+                <p class="pSmall">Loginet, 2021</p>
+              </div>
+              <p class="pregular">
+                A new distribution service in the product and a new entry point
+                for users
+              </p>
+            </div>
+            <div class="cardBottom">
+              <img src="img/loginetlogo.svg" alt="loginetlogo" />
+              <div class="tags">
+                <div class="tag">
+                  <p class="pSmall">UX/UI</p>
+                </div>
+                <div class="tag">
+                  <p class="pSmall">Figma</p>
+                </div>
+                <div class="tag">
+                  <p class="pSmall">Desktop</p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footerstroke" style="opacity: 0; transform: translateY(0px)">
+      <footer class="footer">
+        <p class="h2">Contacts</p>
+        <div class="footerSocial">
+          <a
+            class="footerfont"
+            href="https://t.me/chaplygin_evgeniy"
+            target="_blank"
+            >Telegram</a
+          >
+          <img src="img/dot.svg" alt="dot" />
+          <a
+            class="footerfont"
+            href="https://www.linkedin.com/in/evgeniychaplygin/"
+            target="_blank"
+            >LinkedIn</a
+          >
+          <img src="img/dot.svg" alt="dot" />
+          <a
+            class="footerfont"
+            href="mailto:chaplygindesign@gmail.com"
+            target="_blank"
+            >Get in touch</a
+          >
+        </div>
+      </footer>
+    </div>
+    <script>
+      document.querySelector(".burger").addEventListener("click", function () {
+        this.classList.toggle("active");
+        document.querySelector(".headerpart").classList.toggle("open");
+      });
+    </script>
+  </body>
+</html>

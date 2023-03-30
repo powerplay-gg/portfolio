@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.svg" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/font.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@600;700&family=Poppins:ital,wght@0,400;0,600;1,500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="header" style="opacity: 0; transform: translateY(10px)">
+      <a href="index.html"><img src="img/logo.svg" alt="logo" /></a>
+      <div class="headerpart">
+        <a class="regular24" href="work.html">Work</a>
+        <a class="regular24" href="about.html">About</a>
+        <div class="regular24disabled">RU</div>
+      </div>
+      <div class="burger">
+        <span></span>
+      </div>
+    </div>
+    <div class="main" style="opacity: 0; transform: translateY(0px)">
+      <div class="casewithbutton">
+        <a href="#" onclick="history.back();return false;" class="backbutton">
+          <img src="img/backbutton.svg" alt="backbutton" />
+        </a>
+        <div class="maincase">
+          <div class="case16">
+            <div class="cardTexthead">
+              <p class="h1">Service ”Cargo”</p>
+              <p class="pregular" style="color: #9b9b9f">Loginet, 2021</p>
+            </div>
+            <p class="pregular">
+              A new distribution service in the product and a new entry point
+              for users
+            </p>
+            <a
+              href="https://www.figma.com/file/DNUBHVaPkbL1ti8dcsxLMj/Cargo-V.1?t=wZhkxvyYn8yfc1z8-1"
+              class="link"
+              target="_blank"
+            >
+              <img src="img/link.svg" alt="link" />
+              <p class="pregular" style="color: #3b68dd">Figma's link</p>
+            </a>
+          </div>
+          <div class="case16">
+            <p class="h2">Tasks</p>
+            <p class="pregular">
+              Create a new order distribution module, because the old one is
+              overloaded with functionality and is not suitable for new
+              microservices.
+            </p>
+          </div>
+          <div class="case16">
+            <p class="h2">Solution</p>
+            <p class="pregular">
+              After talking with the product owner and the analyst, it became
+              clear that the new assignment module is very similar to the old
+              one, just with the functionality cut out. Previously, the entity
+              that was assigned to various services was “Shipment”: it was
+              possible to create many routes in it, within which you can create
+              many points and add cargo by selecting the desired point of
+              loading and unloading.
+            </p>
+            <p class="pregular">
+              A new entity for assignation called "Order" is a ”Shipment” who
+              limited to two points, because of this I decided to make the
+              process of its creation as similar as possible to the creation of
+              a shipment, so that it would be easier for users to adapt to the
+              new assignation center (they have been using the shipment service
+              for a year already) and save the consistency of the system.
+            </p>
+            <div class="doubleimg">
+              <img src="img/neworder.png" alt="new" class="img" />
+              <img src="img/oldship.png" alt="old" class="img" />
+            </div>
+            <p class="pSmallGrey">
+              Creating a new entity "Order" and Creation of the old entity
+              “Shipment”
+            </p>
+            <p class="pregular">
+              In the process of work, I found a conflict in the work of the
+              service, because in shipment it was possible to add only one cargo
+              to one point, and in orders it was necessary to add a large number
+              of cargoes to one order. In these statements, we contradict
+              ourselves, because services are interconnected, you need to choose
+              one thing: either we remove this functionality from orders, or we
+              add it in shipment. I had to agree with the stakeholders on a
+              meetup to discuss the conflict of business requirements. During
+              the meeting, we also decided to improve the transportation
+              service, because the functionality described in the cargo is
+              critical for key customers. Adding a lot of loads I did through
+              the grid, with adding to the grid through the sidepage.
+            </p>
+            <div class="doubleimg">
+              <img src="img/add1.png" alt="add1" class="img" />
+              <img src="img/add2.png" alt="add2" class="img" />
+            </div>
+            <p class="pregular">
+              After saving the order, the user enters the view mode, where, if
+              necessary, he can change the parameters individually, assignate
+              the order to various services and view the change log.
+            </p>
+            <img src="img/cargo1.png" alt="cargo1" class="img" />
+            <img src="img/cargo2.png" alt="cargo2" class="img" />
+            <img src="img/cargo3.png" alt="cargo3" class="img" />
+            <img src="img/cargo4.png" alt="cargo4" class="img" />
+            <img src="img/cargo5.png" alt="cargo5" class="img" />
+            <img src="img/cargo6.png" alt="cargo6" class="img" />
+          </div>
+          <div class="case16">
+            <p class="h2">Result</p>
+            <p class="pregular">
+              Before the release, presentations were made to key clients.
+              Clients positively assessed the service, it was convenient and
+              understandable for them to use it, noted the ease of transition
+              from the transportation service and their general logic. After the
+              release of the "cargo" service, users were able to use new
+              services, such as automatic order routing
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footerstroke" style="opacity: 0; transform: translateY(0px)">
+      <footer class="footer">
+        <p class="h2">Contacts</p>
+        <div class="footerSocial">
+          <a
+            class="footerfont"
+            href="https://t.me/chaplygin_evgeniy"
+            target="_blank"
+            >Telegram</a
+          >
+          <img src="img/dot.svg" alt="dot" />
+          <a
+            class="footerfont"
+            href="https://www.linkedin.com/in/evgeniychaplygin/"
+            target="_blank"
+            >LinkedIn</a
+          >
+          <img src="img/dot.svg" alt="dot" />
+          <a
+            class="footerfont"
+            href="mailto:chaplygindesign@gmail.com"
+            target="_blank"
+            >Get in touch</a
+          >
+        </div>
+      </footer>
+    </div>
+    <script>
+      document.querySelector(".burger").addEventListener("click", function () {
+        this.classList.toggle("active");
+        document.querySelector(".headerpart").classList.toggle("open");
+      });
+    </script>
+  </body>
+</html>

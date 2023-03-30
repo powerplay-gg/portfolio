@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.svg" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/font.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@600;700&family=Poppins:ital,wght@0,400;0,600;1,500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="header" style="opacity: 0; transform: translateY(10px)">
+      <a href="index.html"><img src="img/logo.svg" alt="logo" /></a>
+      <div class="headerpart">
+        <a class="regular24" href="work.html">Work</a>
+        <a class="regular24" href="about.html">About</a>
+        <div class="regular24disabled">RU</div>
+      </div>
+      <div class="burger">
+        <span></span>
+      </div>
+    </div>
+    <div class="main" style="opacity: 0; transform: translateY(0px)">
+      <div class="casewithbutton">
+        <a href="#" onclick="history.back();return false;" class="backbutton">
+          <img src="img/backbutton.svg" alt="backbutton" />
+        </a>
+        <div class="maincase">
+          <div class="case16">
+            <div class="cardTexthead">
+              <p class="h1">New processes of design team</p>
+              <p class="pregular" style="color: #9b9b9f">Loginet, 2021</p>
+            </div>
+            <p class="pregular">
+              As a manager, I had to improve old and implement new processes in
+              the design department
+            </p>
+          </div>
+          <div class="case16">
+            <p class="h2">Problem</p>
+            <p class="pregular">
+              In May 2021, my teamlead quit and I started working alone. For two
+              months we could not find either a new leader or a middle designer.
+              Realizing that it was impossible to continue working like this, I
+              initiated the hiring of a junior designers. Having hired two
+              juniors, I realized that a number of new processes needed to be
+              introduced.
+            </p>
+          </div>
+          <div class="case16">
+            <p class="h2">Solution</p>
+            <div class="textgap8">
+              <p class="h3">Sprints</p>
+              <p class="pregular">
+                Previously, we worked without tasks and sprints, the situation
+                allowed. After hiring two new designers and increasing the
+                number of projects, I introduced sprint work with task tracking.
+                At the beginning of each week, we called the PO and synchronized
+                the tasks: what was done and what needs to be done, determined
+                the pool of tasks for the week.
+              </p>
+            </div>
+            <div class="textgap8">
+              <p class="h3">Weekly retrospectives</p>
+              <p class="pregular">
+                For better adaptation and growth of employees, I started holding
+                weekly 1:1 meetings, where we discuss the past week with the
+                designer, what tasks were completed, where there were problems,
+                we determine growth points and make a plan for the next week.
+              </p>
+            </div>
+            <div class="textgap8">
+              <p class="h3">Design debt</p>
+              <p class="pregular">
+                Over the 2 years of the existence of a new design of the
+                product, many problems have accumulated in the technical
+                implementation of the intended design. Given the intensity of
+                the growth in the number and complexity of projects, in the near
+                future we could face either a deterioration in the quality of
+                design, or an increase in development time. I compiled a list of
+                problems, such as inaccuracies in layouts, outdated approaches
+                to interface design, usability issues, etc. All these problems
+                are framed in tasks and distributed in sprints.
+              </p>
+            </div>
+            <div class="textgap8">
+              <p class="h3">Creation of a complete design system</p>
+              <p class="pregular">
+                Our product grew and without clearly defined rules, the design
+                could not exist. We defined them with my previous teamlead, but
+                there was no unified knowledge base and description of the
+                operation of the elements and patterns of user interaction. The
+                guidelines helped new employees to quickly adapt to the company,
+                simplified the interaction between departments and reduced the
+                number of calls to designers. In November 2021, we presented the
+                structure of our guidelines and a description of several
+                elements of the team.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footerstroke" style="opacity: 0; transform: translateY(0px)">
+      <footer class="footer">
+        <p class="h2">Contacts</p>
+        <div class="footerSocial">
+          <a
+            class="footerfont"
+            href="https://t.me/chaplygin_evgeniy"
+            target="_blank"
+            >Telegram</a
+          >
+          <img src="img/dot.svg" alt="dot" />
+          <a
+            class="footerfont"
+            href="https://www.linkedin.com/in/evgeniychaplygin/"
+            target="_blank"
+            >LinkedIn</a
+          >
+          <img src="img/dot.svg" alt="dot" />
+          <a
+            class="footerfont"
+            href="mailto:chaplygindesign@gmail.com"
+            target="_blank"
+            >Get in touch</a
+          >
+        </div>
+      </footer>
+    </div>
+    <script>
+      document.querySelector(".burger").addEventListener("click", function () {
+        this.classList.toggle("active");
+        document.querySelector(".headerpart").classList.toggle("open");
+      });
+    </script>
+  </body>
+</html>

@@ -4,10 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="font.css" />
-    <link rel="stylesheet" href="normalize.css">
+    <title>That's a Gene!</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.svg" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/font.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,16 +18,23 @@
   </head>
   <body>
     <div class="header" style="opacity: 0; transform: translateY(10px)">
-      <img src="img/logo.svg" alt="logo" />
+      <a href="index.html"><img src="img/logo.svg" alt="logo" /></a>
       <div class="headerpart">
         <a class="regular24" href="work.html">Work</a>
         <a class="regular24" href="about.html">About</a>
-        <a class="regular24" href="cv.html">CV</a>
+        <div class="regular24disabled">RU</div>
+      </div>
+      <div class="burger">
+        <span></span>
       </div>
     </div>
     <div class="main" style="opacity: 0; transform: translateY(0px)">
       <div class="titlesvg">
-        <img src="img/index.svg" alt="main" />
+        <object
+          type="image/svg+xml"
+          data="img/mainanimated.svg"
+          class="indexill"
+        ></object>
         <div class="titlesvgtext">
           <p class="h1promo">Product designer and manager</p>
           <p class="pregular">
@@ -40,7 +48,7 @@
       <div class="cardmain">
         <p class="h1">Recent work</p>
         <div class="cards">
-          <div class="card">
+          <a href="design_system.html" class="card card3">
             <div class="cardText">
               <div class="cardTexthead">
                 <p class="h2">Design system YouDo Business</p>
@@ -61,8 +69,8 @@
                 </div>
               </div>
             </div>
-          </div>
-          <div class="card">
+          </a>
+          <a href="processes.html" class="card card2">
             <div class="cardText">
               <div class="cardTexthead">
                 <p class="h2">New processes of design team</p>
@@ -87,24 +95,45 @@
                 </div>
               </div>
             </div>
-          </div>
+          </a>
         </div>
         <div class="buttonmain">
           <a class="button buttonfont" href="work.html">Show all works</a>
         </div>
       </div>
     </div>
-    <div class="footerstroke">
+    <div class="footerstroke" style="opacity: 0; transform: translateY(0px)">
       <footer class="footer">
         <p class="h2">Contacts</p>
         <div class="footerSocial">
-          <p class="footerfont">Telegram</p>
+          <a
+            class="footerfont"
+            href="https://t.me/chaplygin_evgeniy"
+            target="_blank"
+            >Telegram</a
+          >
           <img src="img/dot.svg" alt="dot" />
-          <p class="footerfont">LinkedIn</p>
+          <a
+            class="footerfont"
+            href="https://www.linkedin.com/in/evgeniychaplygin/"
+            target="_blank"
+            >LinkedIn</a
+          >
           <img src="img/dot.svg" alt="dot" />
-          <p class="footerfont">Get in touch</p>
+          <a
+            class="footerfont"
+            href="mailto:chaplygindesign@gmail.com"
+            target="_blank"
+            >Get in touch</a
+          >
         </div>
       </footer>
     </div>
+    <script>
+      document.querySelector(".burger").addEventListener("click", function () {
+        this.classList.toggle("active");
+        document.querySelector(".headerpart").classList.toggle("open");
+      });
+    </script>
   </body>
 </html>
