@@ -1,9 +1,9 @@
 .regular24 {
-  font-family: "Darker Grotesque";
+  font-family: "Raleway";
   font-style: normal;
   font-weight: 600;
-  font-size: 24px;
-  line-height: 33px;
+  font-size: 20px;
+  line-height: 23px;
   letter-spacing: 0.01em;
   color: #151515;
 }
@@ -13,45 +13,47 @@
   text-decoration: underline;
 }
 
-.regular24disabled {
-  font-family: "Darker Grotesque";
+.regular24lang {
+  font-family: "Raleway";
   font-style: normal;
   font-weight: 600;
-  font-size: 24px;
-  line-height: 33px;
+  font-size: 20px;
+  line-height: 23px;
   letter-spacing: 0.01em;
   color: #151515;
-  opacity: 30%;
-  cursor: url(../img/coursorinprogress.svg) 58 0, auto;
   margin-left: 24px;
 }
 
+.regular24lang:hover {
+  color: #3b68dd;
+  text-decoration: underline;
+}
+
 .h1promo {
-  font-family: "Darker Grotesque";
+  font-family: "Raleway";
   font-style: normal;
-  font-weight: 600;
-  font-size: 100px;
-  line-height: 73px;
-  letter-spacing: 0.01em;
+  font-weight: 500;
+  font-size: 84px;
+  line-height: 72px;
   color: #151515;
 }
 
 .pregular {
-  font-family: "Poppins";
+  font-family: "Raleway";
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 18px;
-  line-height: 29px;
-  letter-spacing: 0.01em;
+  line-height: 28px;
+  letter-spacing: 0.02em;
   color: #151515;
 }
 
 .pregularLink {
-  font-family: "Poppins";
+  font-family: "Raleway";
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 18px;
-  line-height: 29px;
+  line-height: 28px;
   letter-spacing: 0.01em;
   color: #151515;
 }
@@ -61,74 +63,74 @@
 }
 
 .h1 {
-  font-family: "Darker Grotesque";
+  font-family: "Raleway";
   font-style: normal;
-  font-weight: 700;
-  font-size: 48px;
-  line-height: 65px;
+  font-weight: 600;
+  font-size: 42px;
+  line-height: 49px;
   letter-spacing: 0.01em;
   color: #151515;
 }
 
 .h2 {
-  font-family: "Darker Grotesque";
+  font-family: "Raleway";
   font-style: normal;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 54px;
-  letter-spacing: 0.01em;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 36px;
+  letter-spacing: 0.02em;
   color: #151515;
 }
 
 .h3 {
-  font-family: "Darker Grotesque";
+  font-family: "Raleway";
   font-style: normal;
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 43px;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 31px;
   letter-spacing: 0.01em;
   color: #151515;
 }
 
 .pBold {
-  font-family: "Poppins";
+  font-family: "Raleway";
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
-  line-height: 27px;
+  line-height: 21px;
   letter-spacing: 0.01em;
   color: #151515;
 }
 
 .pSmall {
-  font-family: "Poppins";
+  font-family: "Raleway";
   font-style: normal;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 22px;
-  letter-spacing: 0.01em;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.03em;
   color: #646464;
 }
 
 .pSmallGrey {
-  font-family: "Poppins";
+  font-family: "Raleway";
   font-style: normal;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 22px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
   text-align: center;
-  letter-spacing: 0.01em;
+  letter-spacing: 0.03em;
   color: #9b9b9f;
   width: 100%;
 }
 
 .footerfont {
-  font-family: "Poppins";
+  font-family: "Raleway";
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 20px;
   line-height: 29px;
-  letter-spacing: 0.01em;
+  letter-spacing: 0.04em;
   text-decoration-line: underline;
   color: #151515;
 }
@@ -138,11 +140,11 @@
 }
 
 .buttonfont {
-  font-family: "Poppins";
+  font-family: "Raleway";
   font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 30px;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 26px;
   letter-spacing: 0.02em;
   color: #151515;
 }
@@ -152,12 +154,12 @@
 }
 
 .callout {
-  font-family: "Poppins";
+  font-family: "Raleway";
   font-style: italic;
   font-weight: 500;
   font-size: 24px;
   line-height: 34px;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.03em;
   color: #151515;
   display: flex;
   flex-direction: row;
@@ -172,7 +174,7 @@
 
 @media only screen and (max-width: 767px) {
   .h1promo {
-    font-size: 54px;
+    font-size: 40px;
     line-height: 40px;
     letter-spacing: 0.02em;
     width: 100%;
@@ -187,21 +189,25 @@
     font-size: 16px;
     line-height: 26px;
   }
+
+  .regular24lang {
+    margin-left: 0px;
+  }
   
   .h1 {
-    font-size: 36px;
-    line-height: 38px;
+    font-size: 30px;
+    line-height: 34px;
   }
   
   .h2 {
-    font-size: 32px;
+    font-size: 26px;
     line-height: 29px;
     letter-spacing: 0.02em;
   }
   
   .h3 {
-    font-size: 28px;
-    line-height: 29px;
+    font-size: 22px;
+    line-height: 26px;
   }
   
   .pBold {
@@ -230,7 +236,8 @@
   
   .callout {
     font-size: 20px;
-    padding: 24px;
+    line-height: 30px;
+    padding: 20px;
   }
 
   .regular24disabled {

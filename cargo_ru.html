@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Case: Design system YouDo Business</title>
+    <title>Кейс: Сервис "Грузы"</title>
     <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
     <!-- Yandex.Metrika counter -->
     <script type="text/javascript">
@@ -65,13 +65,13 @@
   <body>
     <div class="headerStroke" style="opacity: 0; transform: translateY(10px)">
       <div class="header">
-        <a href="index.html" style="display: flex">
+        <a href="index_ru.html" style="display: flex">
           <img src="img/logo.svg" alt="logo" />
         </a>
         <div class="headerpart">
-          <a class="regular24" href="work.html">Work</a>
-          <a class="regular24" href="cv.html">CV</a>
-          <a class="regular24lang" href="cargo_ru.html">RU</a>
+          <a class="regular24" href="work_ru.html">Работы</a>
+          <a class="regular24" href="cv_ru.html">CV</a>
+          <a class="regular24lang" href="cargo.html">EN</a>
         </div>
         <div class="burger">
           <span></span>
@@ -80,18 +80,18 @@
     </div>
     <div class="main" style="opacity: 0; transform: translateY(0px)">
       <div class="casewithbutton">
-        <a href="work.html" class="backbutton">
+        <a href="work_ru.html" class="backbutton">
           <img src="img/backbutton.svg" alt="backbutton" />
         </a>
         <div class="maincase">
           <div class="case16">
             <div class="cardTexthead">
-              <p class="h1">Service ”Cargo”</p>
+              <p class="h1">Сервис “Грузы”</p>
               <p class="pregular" style="color: #9b9b9f">Loginet, 2021</p>
             </div>
             <p class="pregular">
-              A new distribution service in the product and a new entry point
-              for users
+              Новый модуль распределения заказов внутри продукта и новая точка
+              входа для пользователей
             </p>
             <a
               href="https://www.figma.com/file/DNUBHVaPkbL1ti8dcsxLMj/Cargo-V.1?t=wZhkxvyYn8yfc1z8-1"
@@ -103,31 +103,30 @@
             </a>
           </div>
           <div class="case16">
-            <p class="h2">Tasks</p>
+            <p class="h2">Задача</p>
             <p class="pregular">
-              Create a new order distribution module, because the old one is
-              overloaded with functionality and is not suitable for new
-              microservices.
+              Создать новый модуль распределения заказов, т.к. старый перегружен
+              функционалом и не подходит для новых микросервисов.
             </p>
           </div>
           <div class="case16">
-            <p class="h2">Solution</p>
+            <p class="h2">Решение</p>
             <p class="pregular">
-              After talking with the product owner and the analyst, it became
-              clear that the new assignment module is very similar to the old
-              one, just with the functionality cut out. Previously, the entity
-              that was assigned to various services was “Shipment”: it was
-              possible to create many routes in it, within which you can create
-              many points and add cargo by selecting the desired point of
-              loading and unloading.
+              После прочтения документации, общения с продактом и аналитиком,
+              стало понятно, что новый модуль распределения очень похож на
+              старый, просто с урезанным функционалом. Раньше, сущностью,
+              которую распределяли в различные сервисы, была перевозка: в ней
+              можно было создать множество рейсов, внутри которых можно создать
+              множество точек и добавить грузы, выбрав нужную точку загрузки и
+              разгрузки.
             </p>
             <p class="pregular">
-              A new entity for assignation called "Order" is a ”Shipment” who
-              limited to two points, because of this I decided to make the
-              process of its creation as similar as possible to the creation of
-              a shipment, so that it would be easier for users to adapt to the
-              new assignation center (they have been using the shipment service
-              for a year already) and save the consistency of the system.
+              Новая сущность для распределения "Заказ" - рейс, ограниченный
+              двумя точками, поэтому процесс его создания я решил сделать
+              максимально похожим на создание перевозки, чтобы пользователям
+              было легче адаптироваться в новом центре распределения (сервисом
+              перевозок они пользуются уже год) и сохранить консистентность
+              системы.
             </p>
             <div class="doubleimg">
               <a href="img/neworder.png" class="lightbox">
@@ -138,22 +137,21 @@
               </a>
             </div>
             <p class="pSmallGrey">
-              Creation a new entity "Order" and creation of the old entity
-              “Shipment”
+              Создание новой сущности “Заказ” и создание старой сущности
+              “Перевозка”
             </p>
             <p class="pregular">
-              In the process of work, I found a conflict in the work of the
-              service, because in shipment it was possible to add only one cargo
-              to one point, and in orders it was necessary to add a large number
-              of cargoes to one order. In these statements, we contradict
-              ourselves, because services are interconnected, you need to choose
-              one thing: either we remove this functionality from orders, or we
-              add it in shipment. I had to agree with the stakeholders on a
-              meetup to discuss the conflict of business requirements. During
-              the meeting, we also decided to improve the transportation
-              service, because the functionality described in the cargo is
-              critical for key customers. Adding a lot of loads I did through
-              the grid, with adding to the grid through the sidepage.
+              В процессе работы, я обнаружил конфликт в работах сервиса, ведь в
+              перевозке можно было добавить только один груз в одну точку, а в
+              заказах необходимо сделать добавление большого кол-ва грузов в
+              один заказ. В этих утверждениях мы сами себе противоречим, т.к.
+              сервисы взаимосвязаны, нужно выбрать что-то одно: либо мы убираем
+              этот функционал из заказов, либо добавляем его и в перевозке.
+              Пришлось договориться со стейкхолдерами о митапе, для обсуждения
+              конфликта бизнес-требований. В ходе собрания решили еще и
+              доработать сервис перевозок, потому что функционал описанный в
+              грузах критичен для ключевых клиентов. Добавление множества грузов
+              сделал через грид, с добавлением в грид через сайдпейдж
             </p>
             <div class="doubleimg">
               <a href="img/add1.png" class="lightbox">
@@ -164,9 +162,10 @@
               </a>
             </div>
             <p class="pregular">
-              After saving the order, the user enters the view mode, where, if
-              necessary, he can change the parameters individually, assignate
-              the order to various services and view the change log.
+              После сохранения заказа, пользователь попадает в режим просмотра
+              сущности, где, при необходимости, может по отдельности изменять
+              параметры, распределить заказ в различные сервисы и посмотреть
+              журнал изменений.
             </p>
             <a href="img/cargo1.png" class="lightbox">
               <img src="img/cargo1.png" alt="cargo1" class="img" />
@@ -188,14 +187,13 @@
             </a>
           </div>
           <div class="case16">
-            <p class="h2">Result</p>
+            <p class="h2">Результат</p>
             <p class="pregular">
-              Before the release, presentations were made to key clients.
-              Clients positively assessed the service, it was convenient and
-              understandable for them to use it, noted the ease of transition
-              from the transportation service and their general logic. After the
-              release of the "cargo" service, users were able to use new
-              services, such as automatic order routing
+              На момент оформления кейса сервис еще не зарелизили, но уже были
+              проведены презентации ключевым клиентами (О'КЕЙ, Аскона etc.)
+              Клиенты положительно оценили сервис, им было удобно и понятно
+              пользоваться им, отмечали простоту перехода с сервиса перевозки и
+              их общую логику.
             </p>
           </div>
         </div>
@@ -203,7 +201,7 @@
     </div>
     <div class="footerstroke" style="opacity: 0; transform: translateY(0px)">
       <footer class="footer">
-        <p class="h2">Contacts</p>
+        <p class="h2">Контакты</p>
         <div class="footerSocial">
           <a
             class="footerfont"
@@ -223,7 +221,7 @@
             class="footerfont"
             href="mailto:chaplygindesign@gmail.com"
             target="_blank"
-            >Get in touch</a
+            >Почта</a
           >
         </div>
       </footer>
