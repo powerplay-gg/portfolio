@@ -1,170 +1,98 @@
-.regular24 {
-  font-family: "Raleway";
+.promo {
+  color: var(--black-primary, #1d2021);
+  /* Promo */
+  font-family: Raleway;
+  font-size: 46px;
   font-style: normal;
   font-weight: 600;
-  font-size: 20px;
-  line-height: 23px;
-  letter-spacing: 0.01em;
-  color: #151515;
-}
-
-.regular24:hover {
-  color: #0066FF;
-  text-decoration: underline;
-}
-
-.regular24lang {
-  font-family: "Raleway";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 23px;
-  letter-spacing: 0.01em;
-  color: #151515;
-  margin-left: 24px;
-}
-
-.regular24lang:hover {
-  color: #0066FF;
-  text-decoration: underline;
-}
-
-.h1promo {
-  font-family: "Raleway";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 84px;
-  line-height: 72px;
-  color: #151515;
-}
-
-.pregular {
-  font-family: "Raleway";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 28px;
-  letter-spacing: 0.02em;
-  color: #151515;
-}
-
-.pregularLink {
-  font-family: "Raleway";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 28px;
-  letter-spacing: 0.01em;
-  color: #151515;
-}
-
-.pregularLink:hover {
-  color: #0066FF;
+  line-height: normal;
 }
 
 .h1 {
-  font-family: "Raleway";
+  color: var(--black-primary, #1d2021);
+  /* H1 */
+  font-family: Raleway;
+  font-size: 32px;
   font-style: normal;
   font-weight: 600;
-  font-size: 42px;
-  line-height: 49px;
-  letter-spacing: 0.01em;
-  color: #151515;
+  line-height: normal;
+  letter-spacing: 0.32px;
+}
+
+.reg18 {
+  color: var(--black-primary, #1d2021);
+  font-family: Raleway;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.36px;
+}
+
+.bold18 {
+  color: var(--black-primary, #1d2021);
+  font-family: Raleway;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.18px;
+}
+
+.bold18menu {
+  color: var(--black-primary, #1d2021);
+  font-family: Raleway;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0.18px;
 }
 
 .h2 {
-  font-family: "Raleway";
+  color: var(--black-primary, #1d2021);
+  /* H2 */
+  font-family: Raleway;
+  font-size: 24px;
   font-style: normal;
   font-weight: 600;
-  font-size: 32px;
-  line-height: 36px;
-  letter-spacing: 0.02em;
-  color: #151515;
+  line-height: normal;
+  letter-spacing: 0.24px;
 }
 
-.h3 {
-  font-family: "Raleway";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 26px;
-  line-height: 31px;
-  letter-spacing: 0.01em;
-  color: #151515;
-}
-
-.pBold {
-  font-family: "Raleway";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 21px;
-  letter-spacing: 0.01em;
-  color: #151515;
-}
-
-.pSmall {
-  font-family: "Raleway";
-  font-style: normal;
-  font-weight: 500;
+.reg16 {
+  font-family: Raleway;
   font-size: 16px;
-  line-height: 19px;
-  letter-spacing: 0.03em;
-  color: #646464;
-}
-
-.pSmallGrey {
-  font-family: "Raleway";
   font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 19px;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: #9b9b9f;
-  width: 100%;
-}
-
-.footerfont {
-  font-family: "Raleway";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 29px;
-  letter-spacing: 0.04em;
-  text-decoration-line: underline;
+  font-weight: 400;
+  line-height: 23px; /* 143.75% */
+  letter-spacing: 0.32px;
   color: #151515;
 }
 
-.footerfont:hover {
-  color: #0066FF;
-}
-
-.buttonfont {
-  font-family: "Raleway";
+.reg14 {
+  color: var(--black-primary, #1d2021);
+  /* 14 reg */
+  font-family: Raleway;
+  font-size: 14px;
   font-style: normal;
-  font-weight: 600;
-  font-size: 22px;
-  line-height: 26px;
-  letter-spacing: 0.02em;
-  color: #151515;
-}
-
-.buttonfont:hover {
-  color: #fdfdfd;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.28px;
 }
 
 .callout {
   font-family: "Raleway";
   font-style: italic;
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 34px;
-  letter-spacing: 0.03em;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: normal;
+  letter-spacing: 0.48px;
   color: #151515;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  padding: 32px;
+  padding: 16px 0 16px 0;
   margin-top: 16px;
   margin-bottom: 16px;
   border-width: 1px 0px;
@@ -173,74 +101,22 @@
 }
 
 @media only screen and (max-width: 767px) {
-  .h1promo {
-    font-size: 40px;
-    line-height: 40px;
-    letter-spacing: 0.02em;
-    width: 100%;
-  }
-  
-  .pregular {
-    font-size: 16px;
-    line-height: 26px;
+
+  .promo {
+    font-size: 38px;
   }
 
-  .pregularLink {
-    font-size: 16px;
-    line-height: 26px;
-  }
-
-  .regular24lang {
-    margin-left: 0px;
-  }
-  
   .h1 {
-    font-size: 30px;
-    line-height: 34px;
-  }
-  
-  .h2 {
-    font-size: 26px;
     line-height: 29px;
-    letter-spacing: 0.02em;
-  }
-  
-  .h3 {
-    font-size: 22px;
-    line-height: 26px;
-  }
-  
-  .pBold {
-    font-size: 16px;
-    line-height: 26px;
-  }
-  
-  .pSmall {
-    font-size: 13px;
-    line-height: 21px;
-  }
-  
-  .pSmallGrey {
-    font-size: 14px;
-    line-height: 21px;
-  }
-  
-  .footerfont {
-    font-size: 18px;
-  }
-  
-  .buttonfont {
-    font-size: 18px;
-    line-height: 27px;
-  }
-  
-  .callout {
-    font-size: 20px;
-    line-height: 30px;
-    padding: 20px;
+    font-size: 28px;
   }
 
-  .regular24disabled {
-    margin-left: 0px;
+  .reg18 {
+    line-height: 25px;
   }
+
+  .h2 {
+    font-size: 21px;
+  }
+
 }

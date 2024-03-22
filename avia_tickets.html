@@ -58,18 +58,18 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <script type="text/javascript" src="simple-lightbox.min.js"></script>
     <script type="text/javascript" src="script.js"></script>
   </head>
   <body>
-    <div class="main">
-      <div class="burger">
-        <div class="burger-style">
-          <span></span>
-        </div>
+    <div class="burger">
+      <div class="burger-style">
+        <span></span>
       </div>
+    </div>
       <div class="leftbar">
         <div class="menu-nav">
-          <a href="index.html" class="menu-part-active bold18">Главная</a>
+          <a href="index.html" class="menu-part reg18">Главная</a>
           <a href="cases.html" class="menu-part reg18">Кейсы</a>
           <a
             href="img/CV Евгений Чаплыгин.pdf"
@@ -78,6 +78,14 @@
           >
             <p class="reg18">Резюме</p>
             <img src="img/externalpage.svg" alt="ext" />
+          </a>
+          <a
+            href="javascript:history.back()"
+            class="menu-part reg18"
+            style="margin-top: 24px"
+          >
+            <img src="img/back.svg" alt="back" />
+            <p>Назад</p>
           </a>
         </div>
         <div class="menu-nav">
@@ -108,81 +116,39 @@
         </div>
       </div>
       <div class="center">
-        <div class="center-header">
-          <object
-            type="image/svg+xml"
-            data="img/mainanimated.svg"
-            class="mainanim"
-          ></object>
-          <div class="center-header-text">
-            <div>
-              <p class="promo">Евгений Чаплыгин</p>
-              <p class="h1">продуктовый дизайнер и дизайн-лид</p>
-            </div>
-            <p class="reg18">
-              Я - продуктовый дизайнер с более чем 4-х летним опытом в создании
-              сложных B2B продуктов. Использую данные и системное
-              проектирование, чтобы создавать оптимальные решения. Также
-              руководил работой отдела дизайна, обучал младших дизайнеров и
-              отвечал за весь дизайн в компании.
-            </p>
-          </div>
-        </div>
         <div class="gap16">
-          <p class="h1">Последние кейсы</p>
-          <div class="doublecards">
-            <a href="research_onboarding.html" class="card">
-              <div class="card-padding">
-                <div class="gap16">
-                  <div class="cardTexthead">
-                    <p class="h2">Исследование по онбордингу</p>
-                    <p class="reg16" style="color: #545b5e">YouDo Business, 2023</p>
-                  </div>
-                  <p class="reg16">
-                    Определяем, как сделать онбординг в продукте
-                  </p>
-                </div>
-                <div class="card-bottom">
-                  <img src="img/youdologo.svg" alt="youdologo" />
-                  <div class="tags">
-                    <div class="tag">
-                      <p class="reg14">Исследование</p>
-                    </div>
-                  </div>
-                </div>
+          <div class="description">
+            <div class="description-padding">
+              <div>
+                <p class="reg16" style="color: #9b9b9f">Aeroclub, 2023</p>
+                <p class="h2">Поиск авиабилетов</p>
               </div>
-            </a>
-            <a href="design_system.html" class="card" >
-              <div class="card-padding">
-                <div class="gap16">
-                  <div class="cardTexthead">
-                    <p class="h2">Дизайн система YouDo Business</p>
-                    <p class="reg16" style="color: #545b5e">
-                      YouDo Business, 2022
-                    </p>
-                  </div>
-                  <p class="reg16">
-                    Создание полноценной дизайн системы продукта
-                  </p>
-                </div>
-                <div class="card-bottom">
-                  <img src="img/youdologo.svg" alt="youdologo" />
-                  <div class="tags">
-                    <div class="tag">
-                      <p class="reg14">Дизайн система</p>
-                    </div>
-                    <div class="tag">
-                      <p class="reg14">Figma</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a>
+              <p class="reg16">
+                В рамках глобального проекта по редизайну и доработки продукта я
+                сделал полный редизайн поиска и выдачи авиабилетов, в том числе
+                с добавлением нового функционала.
+              </p>
+            </div>
+          </div>
+          <div class="description" id="problem">
+            <div class="description-padding" id="about">
+              <p class="h2">Проблема</p>
+              <p class="reg16">
+                В мае 2021 года уволился мой руководитель и я стал работать
+                один. Два месяца мы не могли найти ни нового руководителя, ни
+                миддл дизайнера. Понимая, что дальше так работать невозможно, я
+                инициировал найм джуниор дизайнера. Наняв двух джунов я понял,
+                что нужно внедрять ряд новых процессов.
+              </p>
+            </div>
           </div>
         </div>
       </div>
       <div class="rightbar">
-        <div class="menu-nav"></div>
+        <div class="anchor">
+          <a href="#problem" class="reg16 anchor-part">Проблема</a>
+          <a href="#solution" class="reg16 anchor-part">Решение</a>
+        </div>
       </div>
     </div>
   </body>
