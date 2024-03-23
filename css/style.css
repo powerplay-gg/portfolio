@@ -164,7 +164,7 @@ li {
 }
 
 .card {
-  width: 100%;
+  width: calc(50% - 12px);
   height: 300px;
   border-radius: 8px;
   border: 1px solid var(--black-primary, #1d2021);
