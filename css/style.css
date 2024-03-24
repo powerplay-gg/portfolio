@@ -344,6 +344,18 @@ li {
   transform: rotate(45deg) translate(0, 50%);
 }
 
+.link {
+  display: flex;
+  gap: 8px;
+}
+
+.links {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin-left: -16px;
+}
+
 @keyframes burgerAnimationin {
   from {
     opacity: 0;
@@ -455,5 +467,9 @@ li {
 
   .center-header {
     gap: 32px;
+  }
+
+  .links {
+    flex-direction: column;
   }
 }
