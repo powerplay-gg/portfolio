@@ -370,6 +370,19 @@ li {
   gap: 4px;
 }
 
+.link-exp {
+  display: flex;
+  gap: 4px;
+}
+
+.company {
+  color: #545B5E !important;
+}
+
+.company:hover {
+  text-decoration: underline;
+}
+
 @keyframes burgerAnimationin {
   from {
     opacity: 0;
