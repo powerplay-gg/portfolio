@@ -356,6 +356,20 @@ li {
   margin-left: -16px;
 }
 
+.exp {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  align-self: stretch;
+  flex-direction: column;
+}
+
+.exp-part {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
 @keyframes burgerAnimationin {
   from {
     opacity: 0;
@@ -390,7 +404,7 @@ li {
   .leftbar {
     display: none;
     width: 100%;
-    background-color: #F6F5F4;
+    background-color: #f6f5f4;
     margin: 0px -16px;
     padding-left: 16px;
     width: calc(100% + 32px);
