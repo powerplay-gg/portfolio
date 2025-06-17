@@ -116,6 +116,7 @@ li {
 
 .menu-part {
   display: flex;
+  overflow: hidden;
   padding: 8px 16px;
   align-items: center;
   gap: 8px;
