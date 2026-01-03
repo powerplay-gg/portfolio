@@ -1,122 +1,112 @@
-.promo {
-  color: var(--black-primary, #1d2021);
-  /* Promo */
-  font-family: Raleway;
-  font-size: 46px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-}
-
 .h1 {
-  color: var(--black-primary, #1d2021);
-  /* H1 */
-  font-family: Raleway;
-  font-size: 32px;
+  color: #000000;
+  font-family: Manrope;
+  font-size: 40px;
   font-style: normal;
   font-weight: 600;
-  line-height: normal;
-  letter-spacing: 0.32px;
-}
-
-.reg18 {
-  color: var(--black-primary, #1d2021);
-  font-family: Raleway;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 28px;
-  letter-spacing: 0.36px;
-}
-
-.bold18 {
-  color: var(--black-primary, #1d2021);
-  font-family: Raleway;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: 0.18px;
-}
-
-.bold18menu {
-  color: var(--black-primary, #1d2021);
-  font-family: Raleway;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 28px;
-  letter-spacing: 0.18px;
+  line-height: 54px; /* 135% */
+  letter-spacing: 0.8px;
 }
 
 .h2 {
-  color: var(--black-primary, #1d2021);
-  /* H2 */
-  font-family: Raleway;
-  font-size: 24px;
+  font-family: Manrope;
+  font-size: 32px;
   font-style: normal;
   font-weight: 600;
-  line-height: normal;
-  letter-spacing: 0.24px;
+  line-height: 44px; /* 137.5% */
+  letter-spacing: 0.64px;
+  color: #000000;
 }
 
-.reg16 {
-  font-family: Raleway;
-  font-size: 16px;
+.regular-24 {
+  color: #000000;
+  font-family: Manrope;
+  font-size: 24px;
   font-style: normal;
   font-weight: 400;
-  line-height: 25px; /* 143.75% */
-  letter-spacing: 0.32px;
-  color: #151515;
-}
-
-.reg14 {
-  color: var(--black-primary, #1d2021);
-  /* 14 reg */
-  font-family: Raleway;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  letter-spacing: 0.28px;
+  line-height: 150%;
+  letter-spacing: 0.48px;
 }
 
 .callout {
-  font-family: "Raleway";
+  color: #000000;
+  font-family: Raleway;
+  font-size: 24px;
   font-style: italic;
   font-weight: 600;
-  font-size: 18px;
-  line-height: normal;
+  line-height: 150%;
   letter-spacing: 0.48px;
-  color: #151515;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   padding: 16px 0 16px 0;
   margin-top: 16px;
   margin-bottom: 16px;
-  border-width: 1px 0px;
+  border-width: 2px 0px;
   border-style: solid;
   border-color: #151515;
 }
 
+.bold-24 {
+  color: #000000;
+  font-family: Manrope;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: 0.48px;
+}
+
+.extrabold-24 {
+  color: var(--Text-Secondary, #808080);
+  text-align: center;
+  font-family: Manrope;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 38px;
+  letter-spacing: 0.48px;
+}
+
+.regular-20 {
+  font-family: Manrope;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px; /* 140% */
+  letter-spacing: 0.4px;
+  color: #808080;
+}
+
 @media only screen and (max-width: 767px) {
-
-  .promo {
-    font-size: 38px;
+  .regular-24 {
+    font-size: 20px;
   }
 
-  .h1 {
-    line-height: 29px;
-    font-size: 28px;
-  }
-
-  .reg18 {
-    line-height: 25px;
+  .bold-24 {
+    font-size: 20px;
   }
 
   .h2 {
-    font-size: 21px;
+    font-size: 28px;
+    line-height: 38px;
   }
 
+  .regular-20 {
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.h1 {
+  font-size: 36px;
+  line-height: 120%;
+}
+
+.callout {
+  font-size: 20px;
+}
+
+.case-main-cell-right a {
+    border-radius: 16px;
+}
 }
