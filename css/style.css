@@ -666,12 +666,14 @@ header.visible {
 
   .header {
     width: 100%;
-    justify-content: center;
+    justify-content: flex-start;
+    padding: 0 0 0 32px;
   }
 
   header.visible {
     width: 100%;
-    justify-content: center;
+    justify-content: flex-start;
+    padding: 0 0 0 32px;
   }
 
   .links {
@@ -680,6 +682,6 @@ header.visible {
   }
 
   .animation-large .media-container-hotel {
-  transform: translateX(0px);
-}
+    transform: translateX(0px);
+  }
 }
