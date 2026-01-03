@@ -664,7 +664,7 @@ header.visible {
     display: none;
   }
 
-  .header {
+  header {
     width: 100%;
     justify-content: flex-start;
     padding: 0 0 0 32px;
