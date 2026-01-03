@@ -560,7 +560,7 @@ header.visible {
     justify-content: center;
     align-items: center;
     align-content: center;
-    gap: 16px;
+    gap: 8px;
     flex-wrap: wrap;
   }
 
@@ -590,6 +590,11 @@ header.visible {
     border-radius: 32px;
     padding-top: 30px;
     justify-content: center;
+  }
+
+  .card-block {
+    gap: 80px;
+    margin-top: 80px;
   }
 
   .card-left {
