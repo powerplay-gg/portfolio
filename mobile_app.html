@@ -49,6 +49,26 @@
         /></div
     ></noscript>
     <!-- /Yandex.Metrika counter -->
+    <script>
+      // Ждём, пока вся структура страницы загрузится
+      document.addEventListener("DOMContentLoaded", function () {
+        // Находим хедер
+        const mainHeader = document.getElementById("main-header");
+
+        // Если хедер есть на странице
+        if (mainHeader) {
+          // Отслеживаем скролл страницы
+          window.addEventListener("scroll", () => {
+            // Если прокрутка больше 300px
+            if (window.scrollY > 700) {
+              mainHeader.classList.add("visible"); // показываем хедер
+            } else {
+              mainHeader.classList.remove("visible"); // скрываем хедер
+            }
+          });
+        }
+      });
+    </script>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/font.css" />
     <link rel="stylesheet" href="css/normalize.css" />
@@ -63,7 +83,7 @@
     <script type="text/javascript" src="script.js"></script>
   </head>
   <body>
-    <div class="header">
+    <header id="main-header">
       <a href="index.html" class="header-index">
         <p class="bold-24" style="color: #808080">Евгений Чаплыгин</p>
       </a>
@@ -98,7 +118,7 @@
           <img src="img/externalpage-s.svg" alt="ext" />
         </a>
       </div>
-    </div>
+    </header>
     <div class="content">
       <div class="case-header">
         <p class="regular-20" style="margin-bottom: -8px">Аэроклуб, 2024</p>

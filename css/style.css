@@ -653,6 +653,7 @@ header.visible {
 
   .header-link {
     height: 44px !important;
+    display: none;
   }
 
   .header {
@@ -664,10 +665,6 @@ header.visible {
   width: 100%;
   justify-content: center;
 }
-
-  .header-index {
-    display: none;
-  }
 
   .links {
   flex-direction: column;
