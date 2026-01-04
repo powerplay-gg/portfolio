@@ -72,11 +72,11 @@ header.visible {
 }
 
 .header-links-index p {
-  color: #000000;
+  color: #414141;
 }
 
 .header-links-case p {
-  color: #000000;
+  color: #414141;
 }
 
 .header-link-tg {
@@ -120,22 +120,22 @@ header.visible {
 }
 
 .header-link-tg:hover {
-  background: #f3f3f3;
+  background: #e2e2e2;
   transition: background 0.3s;
 }
 
 .header-link-li:hover {
-  background: #f3f3f3;
+  background: #e2e2e2;
   transition: background 0.3s;
 }
 
 .header-link-mail:hover {
-  background: #f3f3f3;
+  background: #e2e2e2;
   transition: background 0.3s;
 }
 
 .header-link-cv:hover {
-  background: #f3f3f3;
+  background: #e2e2e2;
   transition: background 0.3s;
 }
 
@@ -149,13 +149,13 @@ header.visible {
 }
 
 .header-index p {
-  color: #000000 !important;
+  color: #414141 !important;
   margin-top: 2px;
   border-bottom: 2px solid transparent;
 }
 
 .header-index:hover p {
-  border-bottom: 2px solid #000000;
+  border-bottom: 2px solid #414141;
 }
 
 .mainanim {
