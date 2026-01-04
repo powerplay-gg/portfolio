@@ -32,55 +32,54 @@ li {
 }
 
 header {
-  display: flex;
-  position: fixed; /* фиксируем сверху */
-  top: 0;
-  left: 50%; /* позиционируем от центра окна */
-  transform: translateX(-50%); /* смещаем на половину ширины */
-  width: 100%;
-  max-width: 1158px; /* нужная ширина */
-  height: 74px;
-  padding: 0 40px 0 40px;
-  background: #ffffff;
-  text-align: center;
+  position: fixed;
+  top: 16px;
+  left: 50%;
+  transform: translate(-50%, -100%); /* старт — спрятан наверху */
   opacity: 0;
-  pointer-events: none;
-  transform: translate(-50%, -100%); /* центр + изначально скрыт вверх */
-  transition: opacity 0.3s, transform 0.3s;
-  z-index: 1000;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+  width: 1158px;
+  display: flex;
+  align-content: center;
+  flex-direction: row;
   justify-content: space-between;
-  align-items: center;
+  height: 74px;
+  background-color: #ffffffcc;
+  padding: 0 20px 0 20px;
+  z-index: 1000;
+  box-shadow: -1px -1px 0 0 rgba(255, 255, 255, 0.4) inset,
+    1px 1px 0 0 rgba(255, 255, 255, 0.6) inset,
+    0 8px 20px 0 rgba(63, 69, 84, 0.18), 0 0 3px 0 rgba(63, 69, 84, 0.12);
+  backdrop-filter: blur(6px);
+  border-radius: 28px;
 }
 
 header.visible {
+  transform: translate(-50%, 0); /* выезжает вниз */
   opacity: 1;
-  pointer-events: auto;
-  transform: translateX(-50%) translateY(0); /* центр + появление */
 }
 
-.header {
-  display: flex;
-  position: fixed; /* фиксируем сверху */
-  top: 0;
-  left: 50%; /* позиционируем от центра окна */
-  transform: translateX(-50%); /* смещаем на половину ширины */
-  width: 1158px; /* нужная ширина */
-  height: 74px;
-  padding: 0 40px 0 40px;
-  background: #ffffff;
-  text-align: center;
-  z-index: 1000;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.header-links {
+.header-links-index {
   display: flex;
   align-items: center;
   gap: 12px;
 }
 
-.header-link {
+.header-links-case {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.header-links-index p {
+  color: #000000;
+}
+
+.header-links-case p {
+  color: #000000;
+}
+
+.header-link-tg {
   display: flex;
   height: 44px;
   padding: 0 16px;
@@ -90,14 +89,73 @@ header.visible {
   border-radius: 12px;
 }
 
-.header-link:hover {
+.header-link-li {
+  display: flex;
+  height: 44px;
+  padding: 0 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  border-radius: 12px;
+}
+
+.header-link-mail {
+  display: flex;
+  height: 44px;
+  padding: 0 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  border-radius: 12px;
+}
+
+.header-link-cv {
+  display: flex;
+  height: 44px;
+  padding: 0 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  border-radius: 12px;
+}
+
+.header-link-tg:hover {
   background: #f3f3f3;
   transition: background 0.3s;
 }
 
-.header-index:hover p {
+.header-link-li:hover {
+  background: #f3f3f3;
+  transition: background 0.3s;
+}
+
+.header-link-mail:hover {
+  background: #f3f3f3;
+  transition: background 0.3s;
+}
+
+.header-link-cv:hover {
+  background: #f3f3f3;
+  transition: background 0.3s;
+}
+
+.header-index {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  flex-direction: row;
+  gap: 16px;
+  border-bottom: 2px solid transparent;
+}
+
+.header-index p {
   color: #000000 !important;
-  text-decoration: underline;
+  margin-top: 2px;
+  border-bottom: 2px solid transparent;
+}
+
+.header-index:hover p {
+  border-bottom: 2px solid #000000;
 }
 
 .mainanim {
@@ -379,7 +437,7 @@ header.visible {
   width: 265px;
   background-color: #ffffff;
   position: sticky;
-  top: 94px;
+  top: 110px;
 }
 
 .case-main-cell-right {
@@ -640,7 +698,7 @@ header.visible {
   }
 
   .case-main {
-    gap: 60px;
+    gap: 0;
   }
 
   .case-main-cell {
@@ -651,8 +709,8 @@ header.visible {
 
   .case-main-cell-left {
     width: 100%;
-    top: 74px;
-    padding: 8px 0 8px 0;
+    top: 0;
+    padding: 92px 0 8px 0;
   }
 
   .case-header {
@@ -664,21 +722,52 @@ header.visible {
     height: 430px;
   }
 
-  .header-link {
+  .header-link-tg {
+    height: 44px !important;
+  }
+
+  .header-link-li {
+    height: 44px !important;
+  }
+
+  .header-link-mail {
+    height: 44px !important;
+  }
+
+  .header-link-cv {
     height: 44px !important;
     display: none;
   }
 
+  .header-links-case {
+    gap: 4px;
+  }
+
+  .header-links-index {
+    gap: 12px;
+  }
+
+  .header-index {
+    gap: 12px;
+  }
+
   header {
-    width: 100%;
-    justify-content: flex-start;
-    padding: 0 0 0 32px;
+    left: 16px;
+    right: 16px;
+    padding: 0 16px 0 16px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    width: auto;
+    transform: translateY(-120%); /* 🚨 без translateX, только по Y */
+  }
+
+  header p {
+    line-height: 21px !important;
   }
 
   header.visible {
-    width: 100%;
-    justify-content: flex-start;
-    padding: 0 0 0 32px;
+    transform: translateY(0); /* плавно появляется сверху вниз */
   }
 
   .links {
