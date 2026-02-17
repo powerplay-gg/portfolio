@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Кейс: Исследование по онбордингу</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+      (function (m, e, t, r, i, k, a) {
+        m[i] =
+          m[i] ||
+          function () {
+            (m[i].a = m[i].a || []).push(arguments);
+          };
+        m[i].l = 1 * new Date();
+        for (var j = 0; j < document.scripts.length; j++) {
+          if (document.scripts[j].src === r) {
+            return;
+          }
+        }
+        (k = e.createElement(t)),
+          (a = e.getElementsByTagName(t)[0]),
+          (k.async = 1),
+          (k.src = r),
+          a.parentNode.insertBefore(k, a);
+      })(
+        window,
+        document,
+        "script",
+        "https://mc.yandex.ru/metrika/tag.js",
+        "ym"
+      );
+
+      ym(93017608, "init", {
+        clickmap: true,
+        trackLinks: true,
+        accurateTrackBounce: true,
+        webvisor: true,
+      });
+    </script>
+    <noscript>
+      <div>
+        <img
+          src="https://mc.yandex.ru/watch/93017608"
+          style="position: absolute; left: -9999px"
+          alt=""
+        />
+      </div>
+    </noscript>
+    <!-- /Yandex.Metrika counter -->
+    <script>
+      // Ждём, пока вся структура страницы загрузится
+      document.addEventListener("DOMContentLoaded", function () {
+        // Находим хедер
+        const mainHeader = document.getElementById("main-header");
+
+        // Если хедер есть на странице
+        if (mainHeader) {
+          // Отслеживаем скролл страницы
+          window.addEventListener("scroll", () => {
+            // Если прокрутка больше 300px
+            if (window.scrollY > 500) {
+              mainHeader.classList.add("visible"); // показываем хедер
+            } else {
+              mainHeader.classList.remove("visible"); // скрываем хедер
+            }
+          });
+        }
+      });
+    </script>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/font.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/simple-lightbox.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <script type="text/javascript" src="simple-lightbox.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+  </head>
+
+  <body>
+    <header id="main-header">
+      <a href="index.html" class="header-index">
+        <img src="img/back.svg" alt="" />
+        <p class="bold-24" style="color: var(--color-text-muted)">Назад</p>
+      </a>
+      <div class="header-links-case">
+        <a
+          href="https://t.me/chaplygin_evgeniy"
+          target="_blank"
+          class="header-link-tg"
+        >
+          <img src="img/telegram-s.svg" alt="telegram" />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/evgeniychaplygin/"
+          target="_blank"
+          class="header-link-li"
+        >
+          <img src="img/linkedin-s.svg" alt="linkedin" />
+        </a>
+        <a
+          href="mailto:chaplygindesign@gmail.com"
+          target="_blank"
+          class="header-link-mail"
+        >
+          <img src="img/mail-s.svg" alt="mail" />
+        </a>
+        <a
+          href="img/CV Евгений Чаплыгин.pdf"
+          target="_blank"
+          class="header-link-cv"
+        >
+          <p class="extrabold-24">CV</p>
+          <img src="img/externalpage-s.svg" alt="ext" />
+        </a>
+      </div>
+    </header>
+    <div class="content">
+      <div class="case-header">
+        <p class="regular-20" style="margin-bottom: -8px">YouDo, 2023</p>
+        <p class="h1">Исследование по онбодрингу</p>
+        <p class="regular-24">
+          Определяем наилучшие способы познакомить пользователя с продуктом
+        </p>
+      </div>
+      <div class="case-main">
+        <div class="animation-large">
+          <video
+            src="img/onboarding.mp4"
+            autoplay
+            muted
+            loop
+            playsinline
+            class="onboard-vid"
+          ></video>
+        </div>
+        <div class="case-main-cell">
+          <div class="case-main-cell-left">
+            <p class="h2">Проблема</p>
+          </div>
+          <p class="regular-24 case-main-cell-right">
+            Мы не объясняем пользователю, как работает продукт и интерфейс. Он
+            либо предоставлен сам себе, либо идет в поддержку. Если налить
+            трафика на текущую версию продукта, поддержка может не выдержать
+            наплыва обращений.
+          </p>
+        </div>
+        <div class="case-main-cell">
+          <p class="h2 case-main-cell-left">Исследование проблемы</p>
+          <p class="regular-24 case-main-cell-right">
+            Повысить автономность пользователя можно разными методами, от
+            простых подсказок в интерфейсе до интерактивных туров по интерфейсу
+            и полноценным хелпцентром с инструкциями. В качестве MVP решили
+            делать более дешевый вариант - контекстные подсказки в интерфейсе.
+            Их должно быть ограниченное количество, чтобы не раздражать
+            пользователя, но не понятно, где именно ему нужна помощь, что
+            конкретно не понятно.
+          </p>
+        </div>
+        <div class="case-main-cell">
+          <p class="h2 case-main-cell-left">Гипотеза</p>
+          <p class="regular-24 case-main-cell-right">
+            Нужно раскидать контекстные подсказки по интерфейсу для
+            пользователей, чтобы он смог быстро и автономно понять, как
+            пользоваться продуктом.
+          </p>
+        </div>
+        <div class="case-main-cell">
+          <p class="h2 case-main-cell-left">Исследование</p>
+          <div class="case-main-cell-right">
+            <p class="regular-24">
+              На старте проекта я провел анализ текущего состояния продукта.
+              Во&nbsp;время глобального редизайна, мы обращали внимание
+              на&nbsp;адаптив по&nbsp;остаточному принципу. Странно было&nbsp;бы
+              делать редизайн, без&nbsp;адаптации под&nbsp;мобильные девайсы,
+              но&nbsp;ресурсов, как на&nbsp;десктоп, не&nbsp;было. В том числе
+              ухудшало ситуацию то, что у&nbsp;меня практически отсутствовал
+              опыт работы с&nbsp;мобильными девайсами, поэтому выдавать сразу
+              приличные мобильные интерфейсы не&nbsp;получалось. В&nbsp;процессе
+              работы над&nbsp;каждым travel-сервисом я постепенно улучшал
+              адаптивный дизайн, из-за&nbsp;чего в&nbsp;итоге каждый сервис
+              получил свою, немного докрученную, версию адаптива.
+            </p>
+            <div class="links">
+              <a
+                href="https://echaplygin.notion.site/3a2ea507fc4449888cf1de1b14547b17?pvs=25"
+                target="_blank"
+                class="header-link-tg"
+                style="height: 56px"
+              >
+                <p class="regular-20" style="color: var(--color-text-secondary);">План интервью</p>
+                <img src="img/externalpage-s.svg" alt="ext" />
+              </a>
+              <a
+                href="https://echaplygin.notion.site/6c59874c228a464b86eaaa67e871bdb1?pvs=74"
+                target="_blank"
+                class="header-link-tg"
+                style="height: 56px"
+              >
+                <p class="regular-20" style="color: var(--color-text-secondary);">Коридорки</p>
+                <img src="img/externalpage-s.svg" alt="ext" />
+              </a>
+              <a
+                href="https://echaplygin.notion.site/48a7e2cf91464517b67455b77f71852b?pvs=74"
+                target="_blank"
+                class="header-link-tg"
+                style="height: 56px"
+              >
+                <p class="regular-20" style="color: var(--color-text-secondary);">Результаты интервью</p>
+                <img src="img/externalpage-s.svg" alt="ext" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="case-main-cell">
+          <p class="h2 case-main-cell-left">Результаты</p>
+          <div class="case-main-cell-right">
+            <ul class="regular-24">
+              <li>
+                Пользователи почти не ошибаются в базовых действиях, им не нужно
+                объяснять где располагаются кнопки, даже возрастные пользователи
+                рано или поздно методом тыка понимают, что где находится
+              </li>
+              <li>
+                Пользователи сталкиваются с проблемами в интерфейсе уже по ходу
+                прохождения всего флоу от добавления исполнителей до выплат
+              </li>
+              <li>
+                Чаще всего пользователи сталкиваются с проблемами из-за
+                отсутствия отзывчивости в интерфейсе, например когда интерфейс
+                не валидирует ошибки.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="case-main-cell">
+          <p class="h2 case-main-cell-left">Вывод</p>
+          <div class="case-main-cell-right">
+            <p class="regular-24">
+              Кажется, что необходимости в подробных контекстных подсказках нет.
+              Можно обойтись контекстными поп-апами со сладерами, объясняющими в
+              общих чертах, что будет происходить в конкретном месте продукта.
+              Для повышения автоматизации нужно пофиксить проблемы в интерфейсе
+              при обработки ошибок.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

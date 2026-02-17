@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Кейс: Мобильное приложение LINK</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+      (function (m, e, t, r, i, k, a) {
+        m[i] =
+          m[i] ||
+          function () {
+            (m[i].a = m[i].a || []).push(arguments);
+          };
+        m[i].l = 1 * new Date();
+        for (var j = 0; j < document.scripts.length; j++) {
+          if (document.scripts[j].src === r) {
+            return;
+          }
+        }
+        (k = e.createElement(t)),
+          (a = e.getElementsByTagName(t)[0]),
+          (k.async = 1),
+          (k.src = r),
+          a.parentNode.insertBefore(k, a);
+      })(
+        window,
+        document,
+        "script",
+        "https://mc.yandex.ru/metrika/tag.js",
+        "ym"
+      );
+
+      ym(93017608, "init", {
+        clickmap: true,
+        trackLinks: true,
+        accurateTrackBounce: true,
+        webvisor: true,
+      });
+    </script>
+    <noscript
+      ><div>
+        <img
+          src="https://mc.yandex.ru/watch/93017608"
+          style="position: absolute; left: -9999px"
+          alt=""
+        /></div
+    ></noscript>
+    <!-- /Yandex.Metrika counter -->
+    <script>
+      // Ждём, пока вся структура страницы загрузится
+      document.addEventListener("DOMContentLoaded", function () {
+        // Находим хедер
+        const mainHeader = document.getElementById("main-header");
+
+        // Если хедер есть на странице
+        if (mainHeader) {
+          // Отслеживаем скролл страницы
+          window.addEventListener("scroll", () => {
+            // Если прокрутка больше 300px
+            if (window.scrollY > 500) {
+              mainHeader.classList.add("visible"); // показываем хедер
+            } else {
+              mainHeader.classList.remove("visible"); // скрываем хедер
+            }
+          });
+        }
+      });
+    </script>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/font.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/simple-lightbox.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <script type="text/javascript" src="simple-lightbox.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+  </head>
+  <body>
+    <header id="main-header">
+      <a href="index.html" class="header-index">
+        <img src="img/back.svg" alt="" />
+        <p class="bold-24" style="color: var(--color-text-muted)">Назад</p>
+      </a>
+      <div class="header-links-case">
+        <a
+          href="https://t.me/chaplygin_evgeniy"
+          target="_blank"
+          class="header-link-tg"
+        >
+          <img src="img/telegram-s.svg" alt="telegram" />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/evgeniychaplygin/"
+          target="_blank"
+          class="header-link-li"
+        >
+          <img src="img/linkedin-s.svg" alt="linkedin" />
+        </a>
+        <a
+          href="mailto:chaplygindesign@gmail.com"
+          target="_blank"
+          class="header-link-mail"
+        >
+          <img src="img/mail-s.svg" alt="mail" />
+        </a>
+        <a
+          href="img/CV Евгений Чаплыгин.pdf"
+          target="_blank"
+          class="header-link-cv"
+        >
+          <p class="extrabold-24">CV</p>
+          <img src="img/externalpage-s.svg" alt="ext" />
+        </a>
+      </div>
+    </header>
+    <div class="content">
+      <div class="case-header">
+        <p class="regular-20" style="margin-bottom: -8px">Аэроклуб, 2024</p>
+        <p class="h1">Мобильное приложение LINK</p>
+        <p class="regular-24">
+          Переход от адаптивной веб версии к мобильному приложению
+        </p>
+      </div>
+      <div class="case-main">
+        <div class="animation-large">
+          <div class="media-container-nav">
+            <img src="img/iPhone.svg" alt="" class="iphone" />
+            <video
+              src="img/services.mp4"
+              autoplay
+              muted
+              loop
+              playsinline
+              class="overlay-video"
+            ></video>
+          </div>
+          <div class="media-container-hotel">
+            <img src="img/iPhone.svg" alt="" class="iphone" />
+            <video
+              src="img/hotel.mp4"
+              autoplay
+              muted
+              loop
+              playsinline
+              class="overlay-video"
+            ></video>
+          </div>
+        </div>
+        <div class="case-main-cell">
+          <div class="case-main-cell-left">
+            <p class="h2">О компании</p>
+          </div>
+          <p class="regular-24 case-main-cell-right">
+            Группа компаний «Аэроклуб» — лидер российского рынка делового
+            туризма, разработчик и&nbsp;поставщик IT-решений и&nbsp;сервисов для
+            бизнеса, эксклюзивный партнер глобальной сети BCD Travel.
+          </p>
+        </div>
+        <div class="case-main-cell">
+          <p class="h2 case-main-cell-left">Моя роль</p>
+          <p class="regular-24 case-main-cell-right">
+            Как старшему дизайнеру продукта мне предстояло создать мобильного
+            приложения, продумать ключевые паттерны, навигацию
+            и&nbsp;адаптировать текущий дизайн продукта в&nbsp;вебе
+            под&nbsp;мобильные паттерны. Работал в&nbsp;связке с&nbsp;продактом
+            и&nbsp;мобильным разработчиком.
+          </p>
+        </div>
+        <div class="case-main-cell">
+          <p class="h2 case-main-cell-left">Бизнес цели</p>
+          <p class="regular-24 case-main-cell-right">
+            Важной причиной разработки приложения стало укрепление репутации
+            бренда — все крупные игроки рынка уже имеют мобильные приложения,
+            которые обеспечивают удобство и&nbsp;современный подход
+            к&nbsp;обслуживанию клиентов. Мобильные приложения обычно работают
+            быстрее, чем&nbsp;адаптивные веб-сайты, позволяют отправлять
+            push-уведомления и&nbsp;работать в&nbsp;офлайн-режиме, что особенно
+            важно в&nbsp;travel-индустрии.
+          </p>
+        </div>
+        <div class="case-main-cell">
+          <p class="h2 case-main-cell-left">Исследования и&nbsp;анализ</p>
+          <div class="case-main-cell-right">
+            <p class="regular-24">
+              На старте проекта я провел анализ текущего состояния продукта.
+              Во&nbsp;время глобального редизайна, мы обращали внимание
+              на&nbsp;адаптив по&nbsp;остаточному принципу. Странно было&nbsp;бы
+              делать редизайн, без&nbsp;адаптации под&nbsp;мобильные девайсы,
+              но&nbsp;ресурсов, как на&nbsp;десктоп, не&nbsp;было. В том числе
+              ухудшало ситуацию то, что у&nbsp;меня практически отсутствовал
+              опыт работы с&nbsp;мобильными девайсами, поэтому выдавать сразу
+              приличные мобильные интерфейсы не&nbsp;получалось. В&nbsp;процессе
+              работы над&nbsp;каждым travel-сервисом я постепенно улучшал
+              адаптивный дизайн, из-за&nbsp;чего в&nbsp;итоге каждый сервис
+              получил свою, немного докрученную, версию адаптива.
+            </p>
+            <a href="img/changes.png" class="lightbox">
+              <img src="img/changes.png" alt="bbefore" class="img" />
+            </a>
+            <p class="regular-24">
+              Также требовалось переосмыслить навигацию в&nbsp;продукте,
+              поскольку её основы, как и&nbsp;адаптивный дизайн, были заложены
+              давно и не&nbsp;подходили в&nbsp;достаточной степени
+              для&nbsp;создания современного мобильного приложения.
+            </p>
+            <p class="regular-24">
+              Отдельное внимание необходимо уделить специфическим мобильным
+              функциям, которых не&nbsp;хватало в&nbsp;текущей версии:
+              актуальной системе авторизации, настройкам приложения (например:
+              уведомление, вход по&nbsp;биометрии) и&nbsp;т.д.
+            </p>
+            <p class="regular-24">
+              Резюмируя: делаем удобную и&nbsp;понятную навигацию,
+              с&nbsp;прицелом на&nbsp;нативный опыт мобильных приложений,
+              приводим все сервисы к&nbsp;консистентному актуальному дизайну
+              дизайним уникальные мобильные экраны (такие как авторизации
+              по&nbsp;биометрии)
+            </p>
+          </div>
+        </div>
+        <div class="case-main-cell">
+          <p class="h2 case-main-cell-left">За работу!</p>
+          <div class="case-main-cell-right">
+            <p class="regular-24">
+              После первоначальной проработки навигации оказалось, что
+              изначальное решение не срабатывает так, как планировалось. В моей
+              голове был привычный паттерн переходов между экранами,, однако при
+              проверке с мобильным разработчиком стало ясно, что в приложении
+              такая логика работать не будет. Тогда я узнал о принципах
+              мини-приложений и понял, что текущий подход необходимо полностью
+              пересмотреть.
+            </p>
+            <p class="regular-24">
+              После доработки я подготовил новую схему навигации и согласовал её
+              с мобильным разработчиком — всё выглядело корректно. Затем показал
+              обновлённый вариант продакт-менеджеру: на адаптацию потребовалось
+              около двух недель, и мы утвердили изменения.
+            </p>
+            <a href="img/nav-flow.png" class="lightbox">
+              <img src="img/nav-flow.png" alt="bbefore" class="img" />
+            </a>
+            <p class="regular-24">
+              На финальном этапе пришлось частично пересобрать дизайн, сделав
+              упор на модальные окна — это позволило сохранить лёгкость
+              приложения и избежать лишней нагрузки. Из-за этого изменилась и
+              общая логика навигации. Я задизайнил обновлённое меню, переходы и
+              взаимодействия между страницами, после чего представил решения
+              стейкхолдерам. Концепция была одобрена.
+            </p>
+            <a href="img/nav-updates.png" class="lightbox">
+              <img src="img/nav-updates.png" alt="bbefore" class="img" />
+            </a>
+            <p class="regular-24">
+              После завершения работы над навигацией я перешёл к проектированию
+              обновлённого процесса авторизации. Важно было создать современный
+              и интуитивный сценарий входа в систему, учитывающий специфику
+              мобильных устройств — вход по биометрии, сохранение сессии и
+              возможность быстрой повторной авторизации.
+            </p>
+            <a href="img/auth.png" class="lightbox">
+              <img src="img/auth.png" alt="bbefore" class="img" />
+            </a>
+            <p class="regular-24">
+              Финальным и самым длительным этапом стала работа над обновлением
+              макетов сервисов. Требовалось пересобрать интерфейсы под новую
+              навигацию, адаптировать существующие страницы и довести визуальную
+              и UX-часть до полного единства.
+            </p>
+            <a href="img/upd_serv.png" class="lightbox">
+              <img src="img/upd_serv.png" alt="bbefore" class="img" />
+            </a>
+          </div>
+        </div>
+        <div class="case-main-cell">
+          <p class="h2 case-main-cell-left">Результат</p>
+          <div class="case-main-cell-right">
+            <p class="regular-24">
+              К сожалению, я покинул компанию до момента реализации проекта.
+              Перед уходом нужно было оперативно привести все сервисы к единому
+              мобильному дизайну, соответствующему современным требованиям. На
+              это ушло около трёх недель интенсивной работы.
+            </p>
+            <p class="regular-24">
+              В результате объемной работы над мобильным приложением, я получил
+              ценный опыт разработки под мобильные ОС, узнал много нового про
+              то, как работают мобильные приложение под капотом и на практике
+              применил свои знания, относительно паттернов взаимодействия в
+              мобильных приложениях.
+            </p>
+            <p class="regular-24">
+              Позже я узнал, что команда успешно продолжила начатое — проект
+              уверенно двигался к релизу приложения и постепенной миграции со
+              старого веб-интерфейса в новый формат, приближенный к полноценному
+              мобильному опыту.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

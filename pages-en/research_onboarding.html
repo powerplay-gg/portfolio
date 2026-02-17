@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <body>
+    <div class="content">
+      <div class="case-header">
+        <p class="regular-20" style="margin-bottom: -8px">YouDo, 2023</p>
+        <p class="h1">Onboarding Research</p>
+        <p class="regular-24">
+          Defining the best ways to introduce users to the product
+        </p>
+      </div>
+      <div class="case-main">
+        <div class="animation-large">
+          <video
+            src="img/onboarding.mp4"
+            autoplay
+            muted
+            loop
+            playsinline
+            class="onboard-vid"
+          ></video>
+        </div>
+        <div class="case-main-cell">
+          <div class="case-main-cell-left">
+            <p class="h2">Problem</p>
+          </div>
+          <p class="regular-24 case-main-cell-right">
+            We do not explain how the product and interface work. Users are
+            either left on their own or forced to contact support. If we scale
+            traffic to the current version, support may not handle the load.
+          </p>
+        </div>
+        <div class="case-main-cell">
+          <p class="h2 case-main-cell-left">Problem exploration</p>
+          <p class="regular-24 case-main-cell-right">
+            User autonomy can be improved in many ways: from basic UI tips to
+            interactive product tours and a full help center. For MVP, we chose
+            a lower-cost option: contextual in-product hints. They should be
+            limited in number to avoid annoying users, but it was unclear where
+            exactly users need help and what they do not understand.
+          </p>
+        </div>
+        <div class="case-main-cell">
+          <p class="h2 case-main-cell-left">Hypothesis</p>
+          <p class="regular-24 case-main-cell-right">
+            We need to place contextual hints across the interface so users can
+            quickly understand how to use the product on their own.
+          </p>
+        </div>
+        <div class="case-main-cell">
+          <p class="h2 case-main-cell-left">Research</p>
+          <div class="case-main-cell-right">
+            <p class="regular-24">
+              At project kickoff, I analyzed the current product state. During
+              the global redesign, responsive behavior had been addressed as a
+              residual task. Redesigning without proper mobile adaptation is
+              risky, but we did not have enough resources to treat mobile with
+              the same depth as desktop. The challenge was increased by my
+              limited mobile-device design experience at that moment, so
+              producing high-quality mobile UI immediately was difficult. Over
+              time, while working on each travel service, I gradually improved
+              responsive layouts, and each service ended up with its own slightly
+              customized responsive version.
+            </p>
+            <div class="links">
+              <a
+                href="https://echaplygin.notion.site/3a2ea507fc4449888cf1de1b14547b17?pvs=25"
+                target="_blank"
+                class="header-link-tg"
+                style="height: 56px"
+              >
+                <p class="regular-20" style="color: var(--color-text-secondary)">Interview Plan</p>
+                <img src="img/externalpage-s.svg" alt="ext" />
+              </a>
+              <a
+                href="https://echaplygin.notion.site/6c59874c228a464b86eaaa67e871bdb1?pvs=74"
+                target="_blank"
+                class="header-link-tg"
+                style="height: 56px"
+              >
+                <p class="regular-20" style="color: var(--color-text-secondary)">Hallway Tests</p>
+                <img src="img/externalpage-s.svg" alt="ext" />
+              </a>
+              <a
+                href="https://echaplygin.notion.site/48a7e2cf91464517b67455b77f71852b?pvs=74"
+                target="_blank"
+                class="header-link-tg"
+                style="height: 56px"
+              >
+                <p class="regular-20" style="color: var(--color-text-secondary)">Interview Results</p>
+                <img src="img/externalpage-s.svg" alt="ext" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="case-main-cell">
+          <p class="h2 case-main-cell-left">Results</p>
+          <div class="case-main-cell-right">
+            <ul class="regular-24">
+              <li>
+                Users rarely make mistakes in basic actions and generally do not
+                need explanations about where controls are located. Even older
+                users usually figure it out through exploration.
+              </li>
+              <li>
+                Most problems appear later in the flow, from adding contractors
+                to completing payouts.
+              </li>
+              <li>
+                The most common issues are caused by lack of UI responsiveness,
+                for example when the interface does not validate errors clearly.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="case-main-cell">
+          <p class="h2 case-main-cell-left">Conclusion</p>
+          <div class="case-main-cell-right">
+            <p class="regular-24">
+              It looks like detailed contextual hints are not necessary. We can
+              use lightweight contextual popups with sliders that explain, at a
+              high level, what happens in each part of the product. To increase
+              user autonomy, we should fix error-handling issues in the
+              interface.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

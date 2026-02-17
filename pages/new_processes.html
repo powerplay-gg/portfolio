@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Кейс: Новые процессы отдела дизайна</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+      (function (m, e, t, r, i, k, a) {
+        m[i] =
+          m[i] ||
+          function () {
+            (m[i].a = m[i].a || []).push(arguments);
+          };
+        m[i].l = 1 * new Date();
+        for (var j = 0; j < document.scripts.length; j++) {
+          if (document.scripts[j].src === r) {
+            return;
+          }
+        }
+        (k = e.createElement(t)),
+          (a = e.getElementsByTagName(t)[0]),
+          (k.async = 1),
+          (k.src = r),
+          a.parentNode.insertBefore(k, a);
+      })(
+        window,
+        document,
+        "script",
+        "https://mc.yandex.ru/metrika/tag.js",
+        "ym"
+      );
+
+      ym(93017608, "init", {
+        clickmap: true,
+        trackLinks: true,
+        accurateTrackBounce: true,
+        webvisor: true,
+      });
+    </script>
+    <noscript>
+      <div>
+        <img
+          src="https://mc.yandex.ru/watch/93017608"
+          style="position: absolute; left: -9999px"
+          alt=""
+        />
+      </div>
+    </noscript>
+    <!-- /Yandex.Metrika counter -->
+    <script>
+      // Ждём, пока вся структура страницы загрузится
+      document.addEventListener("DOMContentLoaded", function () {
+        // Находим хедер
+        const mainHeader = document.getElementById("main-header");
+
+        // Если хедер есть на странице
+        if (mainHeader) {
+          // Отслеживаем скролл страницы
+          window.addEventListener("scroll", () => {
+            // Если прокрутка больше 300px
+            if (window.scrollY > 500) {
+              mainHeader.classList.add("visible"); // показываем хедер
+            } else {
+              mainHeader.classList.remove("visible"); // скрываем хедер
+            }
+          });
+        }
+      });
+    </script>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/font.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/simple-lightbox.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script type="text/javascript" src="simple-lightbox.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+  </head>
+  <body>
+    <header id="main-header">
+      <a href="index.html" class="header-index">
+        <img src="img/back.svg" alt="" />
+        <p class="bold-24" style="color: var(--color-text-muted)">Назад</p>
+      </a>
+      <div class="header-links-case">
+        <a
+          href="https://t.me/chaplygin_evgeniy"
+          target="_blank"
+          class="header-link-tg"
+        >
+          <img src="img/telegram-s.svg" alt="telegram" />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/evgeniychaplygin/"
+          target="_blank"
+          class="header-link-li"
+        >
+          <img src="img/linkedin-s.svg" alt="linkedin" />
+        </a>
+        <a
+          href="mailto:chaplygindesign@gmail.com"
+          target="_blank"
+          class="header-link-mail"
+        >
+          <img src="img/mail-s.svg" alt="mail" />
+        </a>
+        <a
+          href="img/CV Евгений Чаплыгин.pdf"
+          target="_blank"
+          class="header-link-cv"
+        >
+          <p class="extrabold-24">CV</p>
+          <img src="img/externalpage-s.svg" alt="ext" />
+        </a>
+      </div>
+    </header>
+    <div class="content">
+      <div class="case-header">
+        <p class="regular-20" style="margin-bottom: -8px">Loginet, 2021</p>
+        <p class="h1">Новые процессы отдела дизайна</p>
+        <p class="regular-24">
+          Как менеджеру, мне пришлось улучшить старые и внедрить новые процессы
+          в отдел дизайна
+        </p>
+      </div>
+      <div class="case-main">
+        <div class="animation-large" style="padding: 0 0 0 0">
+          <img src="img/process-large.svg" alt="" />
+        </div>
+        <div class="case-main-cell">
+          <div class="case-main-cell-left">
+            <p class="h2">Проблема</p>
+          </div>
+          <p class="regular-24 case-main-cell-right">
+            В мае 2021 года уволился мой руководитель и я стал работать один.
+            Два месяца мы не могли найти ни нового руководителя, ни миддл
+            дизайнера. Понимая, что дальше так работать невозможно, я
+            инициировал найм джуниор дизайнера. Наняв двух джунов я понял, что
+            нужно внедрять ряд новых процессов.
+          </p>
+        </div>
+        <div class="case-main-cell">
+          <p class="h2 case-main-cell-left">Решение</p>
+          <div class="case-main-cell-right">
+            <p class="bold-24">Работа по спринтам</p>
+            <p class="regular-24">
+              Раньше мы работали без задач и спринтов, ситуация позволяла. После
+              принятия двух новых дизайнеров и в целом увеличения количества
+              проектов я организовал работу отдела по спринтам, с трекингом
+              задач. В начале каждой недели мы созваниваемся с PO и проводим
+              синк по задачам: что было сделано и что нужно сделать, определяем
+              пул задач на неделю.
+            </p>
+            <p class="bold-24">Еженедельные рестроспективы</p>
+            <p class="regular-24">
+              Для лучшей адаптации и роста сотрудников я начал проводить
+              еженедельные встречи 1:1, на которых мы обсуждаем с дизайнером
+              прошедшую неделю, какие задачи удалось закрыть, где были проблемы,
+              определяем точки роста и составляем план на следующую неделю.
+            </p>
+            <p class="bold-24">Дизайн долг</p>
+            <p class="regular-24">
+              За 2 года существования нового дизайна портала накопилось
+              множество проблем в технической реализации задуманного дизайна. С
+              учетом интенсивности роста количества и сложности проектов в
+              ближайшее время мы могли бы столкнуться либо с ухудшением качества
+              дизайна, либо с увеличением сроков разработки. Мною был составлен
+              перечень проблем, таких как неточности на макетах, устаревшие
+              подходы к проектированию интерфейса, проблемы с юзабилити и т.п.
+              Все эти проблемы оформлены в задачи и распределены в спринты.
+            </p>
+            <p class="bold-24">Создание полноценной дизайн системы</p>
+            <p class="regular-24">
+              Наш продукт разрастается и без четко описанных правил дизайн не
+              может существовать. Мы определили их еще с моим предыдущим
+              руководителем, но не было единой базы знаний и описания работы
+              элементов и паттернов взаимодействия пользователя. Гайдлайны
+              помогут быстрее адаптироваться новым сотрудникам компании,
+              упростят взаимодействие отделов и уменьшат кол-во обращений к
+              дизайнерам. В ноябре 2021 года мы уже презентовали структуру наших
+              гайдлайнов и описание нескольких элементов команды.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
